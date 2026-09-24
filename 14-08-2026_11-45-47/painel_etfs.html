@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Painel ETFs — 14/08/2026</title>
+
+<style>
+  body {
+    font-family: -apple-system, Segoe UI, Roboto, sans-serif;
+    background: #faf9f5;
+    color: #1a1a18;
+    margin: 0;
+    padding: 32px;
+  }
+
+  .wrap {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 4px;
+  }
+
+  .sub {
+    color: #6b6a63;
+    font-size: 13px;
+    margin: 0 0 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    font-size: 14px;
+  }
+
+  th {
+    text-align: left;
+    padding: 12px 14px;
+    background: #f1efe8;
+    font-weight: 500;
+    color: #444441;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+
+  td {
+    padding: 12px 14px;
+    border-top: 0.5px solid #eceae2;
+  }
+
+  .tk {
+    font-weight: 500;
+  }
+
+  .pill {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .nota {
+    color: #6b6a63;
+    font-size: 12px;
+    margin-top: 16px;
+    line-height: 1.6;
+  }
+
+  .legenda {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-top: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+
+  .legenda h2 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 14px;
+    color: #1a1a18;
+  }
+
+  .legenda dl {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 16px;
+  }
+
+  .legenda dt {
+    font-weight: 500;
+    color: #185FA5;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .legenda dd {
+    margin: 0;
+    color: #444441;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+<h1>Painel técnico dos ETFs</h1>
+<p class="sub">14/08/2026 · fonte: Yahoo Finance / brapi.dev</p>
+
+<table>
+<thead>
+<tr>
+<th>Ativo</th>
+<th>Preço</th>
+<th>RSI 14</th>
+<th>MM 9x21</th>
+<th>MACD</th>
+<th>Bollinger</th>
+<th>Vol. rel.</th>
+<th>Pontos</th>
+<th>Sinal</th>
+</tr>
+</thead>
+
+<tbody>
+<tr><td class="tk">KDIF11</td><td colspan="7" style="color:#888780;">sem dados — ver checklist no terminal</td><td><span class="pill" style="background:#F1EFE8;color:#888780;">sem dados</span></td></tr><tr><td class="tk">GOLD11</td><td>R$ 23.82</td><td style="color:#791F1F;font-weight:500;">72.5</td><td>↑ sim</td><td>positivo</td><td>meio</td><td style="font-weight:400;">0.24</td><td style="text-align:center;">+1</td><td><span class="pill" style="background:#F1EFE8;color:#444441;">NEUTRO</span></td></tr><tr><td class="tk">WRLD11</td><td>R$ 153.30</td><td style="color:#791F1F;font-weight:500;">74.3</td><td>↑ sim</td><td>positivo</td><td>banda superior</td><td style="font-weight:400;">0.2</td><td style="text-align:center;">+0</td><td><span class="pill" style="background:#F1EFE8;color:#444441;">NEUTRO</span></td></tr><tr><td class="tk">JURO11</td><td>R$ 94.81</td><td style="color:#444441;font-weight:500;">37.3</td><td>↓ não</td><td>negativo</td><td>meio</td><td style="font-weight:400;">0.27</td><td style="text-align:center;">-2</td><td><span class="pill" style="background:#FCEBEB;color:#791F1F;">VENDA</span></td></tr><tr><td class="tk">FIXA11</td><td>R$ 19.42</td><td style="color:#444441;font-weight:500;">56.2</td><td>↑ sim</td><td>negativo</td><td>meio</td><td style="font-weight:400;">0.36</td><td style="text-align:center;">+0</td><td><span class="pill" style="background:#F1EFE8;color:#444441;">NEUTRO</span></td></tr><tr><td class="tk">USDB11</td><td>R$ 100.56</td><td style="color:#444441;font-weight:500;">63.9</td><td>↑ sim</td><td>positivo</td><td>banda superior</td><td style="font-weight:400;">0.69</td><td style="text-align:center;">+1</td><td><span class="pill" style="background:#F1EFE8;color:#444441;">NEUTRO</span></td></tr>
+</tbody>
+</table>
+
+<div class="legenda">
+<h2>O que cada coluna significa</h2>
+
+<dl>
+<dt>RSI 14</dt>
+<dd>Força do movimento nos últimos 14 dias, de 0 a 100. Acima de 70 = sobrecomprado. Abaixo de 30 = sobrevendido.</dd>
+
+<dt>MM 9x21</dt>
+<dd>Cruzamento das médias móveis de 9 e 21 dias. &uarr; sim = tendência de alta. &darr; não = tendência de baixa.</dd>
+
+<dt>MACD</dt>
+<dd>Mede se a tendência está ganhando ou perdendo força. Positivo = momento comprador. Negativo = momento vendedor.</dd>
+
+<dt>Bollinger</dt>
+<dd>Mostra onde o preço está dentro da faixa normal de oscilação. Banda inferior = preço baixo. Banda superior = preço alto. Meio = dentro do normal.</dd>
+
+<dt>Vol. rel.</dt>
+<dd>Volume do dia dividido pela média de 21 dias. Acima de 1,5 = movimento com força. Abaixo de 1 = movimento fraco.</dd>
+
+<dt>Pontos</dt>
+<dd>Soma dos quatro indicadores, de &minus;4 a +4. A partir de +2 vira COMPRA. A partir de &minus;2 vira VENDA. No meio fica NEUTRO.</dd>
+</dl>
+</div>
+
+<p class="nota">
+RSI em vermelho = sobrecomprado (&gt;70), verde = sobrevendido (&lt;30).
+Volume relativo em negrito quando &ge; 1,5x a média.
+Pontuação de &minus;4 a +4: cruze sempre com o viés macro antes de decidir.<br>
+Ferramenta educativa — não é recomendação de investimento.
+</p>
+
+</div>
+</body>
+</html>

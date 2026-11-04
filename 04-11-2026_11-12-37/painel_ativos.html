@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Painel técnico de ativos — 04/11/2026</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f7f7f5;
+  color: #18181b;
+  margin: 0;
+  padding: 28px;
+}
+.wrap { max-width: 1500px; margin: 0 auto; }
+h1 { font-size: 22px; margin: 0 0 6px; }
+.sub { margin: 0 0 18px; color: #71717a; font-size: 13px; }
+.card {
+  background: white;
+  border: 1px solid #e4e4e7;
+  border-radius: 12px;
+  overflow-x: auto;
+  box-shadow: 0 1px 2px rgba(0,0,0,.04);
+}
+table { width: 100%; border-collapse: collapse; min-width: 1280px; font-size: 13px; }
+th {
+  position: sticky;
+  top: 0;
+  background: #f4f4f5;
+  text-align: left;
+  padding: 10px 12px;
+  color: #52525b;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .035em;
+  white-space: nowrap;
+}
+td { border-top: 1px solid #eeeeef; padding: 10px 12px; white-space: nowrap; }
+.tk { font-weight: 700; }
+.muted { color: #71717a; white-space: normal; }
+.strong { font-weight: 800; }
+.score-high { color: #166534; font-weight: 800; }
+.score-mid { color: #52525b; font-weight: 800; }
+.score-low { color: #991b1b; font-weight: 800; }
+.pill { display:inline-block; padding:4px 9px; border-radius:999px; font-size:12px; font-weight:700; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:14px; margin-top:16px; }
+.info { background:white; border:1px solid #e4e4e7; border-radius:12px; padding:16px; }
+.info h2 { font-size:14px; margin:0 0 10px; }
+.info p, .info li { font-size:12.5px; line-height:1.55; color:#52525b; }
+.info ul { margin:8px 0 0; padding-left:18px; }
+code { background:#f4f4f5; padding:1px 4px; border-radius:4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Painel técnico de ativos</h1>
+  <p class="sub">Executado em 04/11/2026 11:12 · fuso America/Sao_Paulo · candle diário concluído · Yahoo Finance com fallback brapi</p>
+
+  <div class="card">
+    <table>
+      <thead>
+        <tr>
+          <th>Ativo</th><th>Classe</th><th>Data</th><th>Preço</th><th>Ret. 21D</th>
+          <th>MM9x21</th><th>Cruzamento</th><th>RSI14</th><th>RSI estado</th>
+          <th>MACD hist</th><th>Bollinger</th><th>Vol. rel.</th><th>Score</th><th>Viés</th>
+        </tr>
+      </thead>
+      <tbody><tr><td class='tk'>KDIF11</td><td>FI-Infra</td><td>03/11/2026</td><td>R$ 104.90</td><td>-6.60%</td><td>baixa</td><td>-</td><td>31.0</td><td>momentum baixista</td><td>-1.8512</td><td>meio inferior</td><td class=''>0.74</td><td class='score-low'>5.3</td><td><span class='pill' style='background:#FEE2E2;color:#991B1B'>FORTE BAIXA</span></td></tr><tr><td class='tk'>GOLD11</td><td>ETF Commodities</td><td>03/11/2026</td><td>R$ 22.34</td><td>-1.15%</td><td>alta</td><td>-</td><td>52.4</td><td>neutro</td><td>+0.1371</td><td>meio superior</td><td class='strong'>1.67</td><td class='score-high'>70.3</td><td><span class='pill' style='background:#ECFDF3;color:#237A45'>ALTA</span></td></tr><tr><td class='tk'>WRLD11</td><td>ETF Ações Globais</td><td>03/11/2026</td><td>R$ 154.32</td><td>3.42%</td><td>alta</td><td>-</td><td>63.9</td><td>momentum altista</td><td>+1.2418</td><td>meio superior</td><td class=''>0.98</td><td class='score-high'>87.8</td><td><span class='pill' style='background:#DCFCE7;color:#166534'>FORTE ALTA</span></td></tr><tr><td class='tk'>ALUG11</td><td>ETF Imobiliário</td><td>03/11/2026</td><td>R$ 44.87</td><td>12.12%</td><td>alta</td><td>-</td><td>71.3</td><td>forte/esticado</td><td>+0.6292</td><td>acima/superior</td><td class='strong'>1.86</td><td class='score-high'>95.7</td><td><span class='pill' style='background:#DCFCE7;color:#166534'>FORTE ALTA</span></td></tr><tr><td class='tk'>IRFM11</td><td>ETF Renda Fixa BR</td><td>03/11/2026</td><td>R$ 104.04</td><td>-1.48%</td><td>baixa</td><td>-</td><td>33.9</td><td>momentum baixista</td><td>-0.6970</td><td>meio inferior</td><td class=''>0.13</td><td class='score-low'>6.4</td><td><span class='pill' style='background:#FEE2E2;color:#991B1B'>FORTE BAIXA</span></td></tr><tr><td class='tk'>USDB11</td><td>ETF Renda Fixa Global</td><td>03/11/2026</td><td>R$ 104.84</td><td>7.25%</td><td>alta</td><td>-</td><td>72.6</td><td>forte/esticado</td><td>+1.1166</td><td>meio superior</td><td class='strong'>2.56</td><td class='score-high'>100.0</td><td><span class='pill' style='background:#DCFCE7;color:#166534'>FORTE ALTA</span></td></tr><tr><td class='tk'>NUCL11</td><td>ETF Temático</td><td>03/11/2026</td><td>R$ 60.34</td><td>-8.06%</td><td>baixa</td><td>-</td><td>44.7</td><td>momentum baixista</td><td>+0.7088</td><td>meio inferior</td><td class=''>0.84</td><td class='score-low'>36.1</td><td><span class='pill' style='background:#FEF2F2;color:#B42318'>BAIXA</span></td></tr><tr><td class='tk'>HTEK11</td><td>ETF Temático</td><td>03/11/2026</td><td>R$ 87.26</td><td>13.10%</td><td>alta</td><td>-</td><td>69.5</td><td>momentum altista</td><td>+0.8125</td><td>meio superior</td><td class=''>0.77</td><td class='score-high'>89.8</td><td><span class='pill' style='background:#DCFCE7;color:#166534'>FORTE ALTA</span></td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="grid">
+    <div class="info">
+      <h2>Como o score funciona</h2>
+      <p>O score vai de 0 a 100 e combina três dimensões independentes:</p>
+      <ul>
+        <li><b>Tendência:</b> posição e inclinação de MM9/MM21.</li>
+        <li><b>Momentum:</b> MACD + RSI tratado como força, não como gatilho automático de reversão.</li>
+        <li><b>Volume:</b> apenas confirma a direção do movimento quando está acima da média.</li>
+      </ul>
+    </div>
+    <div class="info">
+      <h2>Faixas do viés</h2>
+      <ul>
+        <li>75–100: <b>FORTE ALTA</b></li>
+        <li>60–74,9: <b>ALTA</b></li>
+        <li>40,1–59,9: <b>NEUTRO</b></li>
+        <li>25,1–40: <b>BAIXA</b></li>
+        <li>0–25: <b>FORTE BAIXA</b></li>
+      </ul>
+    </div>
+    <div class="info">
+      <h2>Cuidados</h2>
+      <ul>
+        <li>RSI &gt; 70 não significa venda automática.</li>
+        <li>Tocar a banda superior de Bollinger não significa ativo “caro”.</li>
+        <li>KDIF11 é FI-Infra, não ETF; distribuições e liquidez mudam a leitura.</li>
+        <li>O score descreve estado técnico. Não é recomendação de investimento.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>
